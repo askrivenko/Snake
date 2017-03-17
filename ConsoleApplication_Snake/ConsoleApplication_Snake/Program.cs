@@ -10,8 +10,16 @@ namespace ConsoleApplication_Snake
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Привет мир!");
+
+			Draw(2, 1, '*');
+
 			Console.ReadKey();
+		}
+
+		static void Draw(int x, int y, char sym)
+		{
+			Console.SetCursorPosition(x, y);
+			Console.Write(sym);
 		}
 	}
 }
